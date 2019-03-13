@@ -65,16 +65,48 @@ h1, h2, h3, h4, h5 {
 
 /* Start Here */
 .container {
-	width: 850px;
+	max-width: 1024px;
   margin: 0 auto;
+}
+
+@media(max-width: 800px){
+  .container {
+    max-width: 90%;
+    margin: 0 auto
+  }
+}
+
+@media(max-width: 500px){
+  .container {
+    max-width: 95%;
+    margin: 0 auto
+  }
 }
 
 .header {
 	display: flex;
 	width: 100%;
 	align-items: center;
-	justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 25px;
 	margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 25px
+  }
+}
+
+
+@media(max-width: 500px){
+  .header {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
 }
 
 nav {
@@ -87,6 +119,43 @@ nav a {
 	color: gray;
 	font-size: 18px;
 	text-decoration: none;
+}
+
+@media (max-width: 800px){
+  nav {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .circle {
+    display: none;
+  }
+}
+
+@media (max-width: 500px){
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  }
+  nav a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+  .navs {
+    padding: 20px
+  }
+  #services {
+    border-top: 1px solid black
+  }
+}
+
+@media(max-width: 500px){
+  .logo {
+    margin-top: 15px;
+  }
 }
 
 .services-header-img {
@@ -177,8 +246,25 @@ button {
   display: flex;
 }
 
+@media(max-width: 800px){
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer h3 {
+    margin-top: 25px;
+  }
+}
+
 .picture {
   display: flex;
+}
+
+@media(max-width: 800px){
+  .services-info-img-2 {
+    width: 100%;
+  }
 }
 
 .services-header-img-2 {
@@ -199,4 +285,10 @@ p {
   margin-top: 50px;
   font-size: 18px;
   text-align: center;
+}
+
+@media(max-width: 800px){
+  .copyrite {
+    margin-bottom: 25px;
+  }
 }
