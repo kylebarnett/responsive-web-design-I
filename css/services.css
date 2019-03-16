@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,11 +63,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
+/* Start Here */
 .container {
 	max-width: 1024px;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 @media(max-width: 800px){
@@ -98,7 +96,7 @@ h1, h2, h3, h4, h5 {
   .header {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 0px
+    margin-bottom: 25px
   }
 }
 
@@ -107,7 +105,7 @@ h1, h2, h3, h4, h5 {
   .header {
     flex-direction: column-reverse;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
   }
 }
 
@@ -160,108 +158,137 @@ nav a {
   }
 }
 
-.main {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 100px;
+.services-header-img {
+  width: 100%;
 }
 
-@media(max-width: 800px){
-  .main {
-    margin-top: 0px;
-  }
+.service-p {
+  margin-bottom: 50px;
+  line-height: 1.2;
 }
 
-.title {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 100px;
-}
-
-@media(max-width: 800px){
-  .title {
-    margin-top: 50px;
-  }
-}
-
-h1 {
-	width: 350px;
-	align-content: center;
-}
-
-.circle {
-	float: right;
-}
-
-.button {
-	background-color: white;
-  border: 1px solid gray;
-	font-size: 18px;
-}
-
-h1 {
-	font-size: 80px;
+h2 {
+  font-size: 25px;
+  margin-top: 25px;
 }
 
 .main-body {
-	display: flex;
-	flex-wrap: wrap;
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 25px;
 }
 
-.features-and-about {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 25px;
-	margin-bottom: 50px;
-	width: 100%;
+.digital-design {
+  border: 1px solid black;
+  background-color: lightgray;
+  line-height: 1.2;
+  width: 45%;
+  padding: 15px;
+  margin: 20px 0px 20px 0px;
 }
 
-@media(max-width: 500px){
-  .features-and-about {
+.ux-ui {
+  border: 1px solid black;
+  background-color: lightgray;
+  line-height: 1.2;
+  width: 45%;
+  padding: 15px;
+  margin: 20px 0px 20px 0px;
+}
+
+.digital-marketing {
+  border: 1px solid black;
+  background-color: lightgray;
+  line-height: 1.2;
+  width: 45%;
+  padding: 15px;
+  margin: 20px 0px 20px 0px;
+}
+
+.web-dev {
+  border: 1px solid black;
+  background-color: lightgray;
+  line-height: 1.2;
+  width: 45%;
+  padding: 15px;
+  margin: 20px 0px 20px 0px;
+}
+
+.ios-dev {
+  border: 1px solid black;
+  background-color: lightgray;
+  line-height: 1.2;
+  width: 45%;
+  padding: 15px;
+  margin: 20px 0px 20px 0px;
+}
+
+.android-dev {
+  border: 1px solid black;
+  background-color: lightgray;
+  line-height: 1.2;
+  width: 45%;
+  padding: 15px;
+  margin: 20px 0px 20px 0px;
+}
+
+button {
+  border-radius: 4px;
+  height: 25px;
+  width: 100px;
+  margin-top: 8px;
+}
+
+.footer {
+  display: flex;
+}
+
+@media(max-width: 800px){
+  .footer {
     display: flex;
-    flex-direction: column
+    flex-direction: column-reverse;
+  }
+
+  .footer h3 {
+    margin-top: 25px;
   }
 }
 
-.dummy {
-	margin-right: 50px;
+.picture {
+  display: flex;
 }
 
-@media(max-width: 500px){
-  .dummy {
+@media(max-width: 800px){
+  .services-info-img-2 {
+    width: 100%;
+  }
+}
+
+.services-header-img-2 {
+  width: 15%;
+}
+
+ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.2;
+}
+
+.copyrite {
+  margin-top: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media(max-width: 800px){
+  .copyrite {
     margin-bottom: 25px;
   }
 }
-
-.middle-img {
-  width: 100%;
-  height: auto;
-}
-
-.services-product-vision {
-	display: flex;
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
-
-@media(max-width: 500px){
-  .services-product-vision {
-    display: flex;
-    flex-direction: column
-  }
-}
-
-footer {
-	color: black;
-	margin-top: 35px;
-}
-
-.copyright {
-	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
